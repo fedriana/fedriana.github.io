@@ -1,0 +1,357 @@
+* {
+    padding: 0 ;
+    margin: 0;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+main {
+    background: #FEFFDE;
+}
+body {
+    background: #FEFFDE;
+}
+/* ----------header------------ */
+#header {
+    background-image: url(img/tea.jpg);
+    min-height: 100vh;
+    width: 100%;
+}
+nav {
+    display: flex;
+    width: 100%;
+    background: #52734D;
+    height: 60px;
+    position: fixed;
+}
+nav img {
+    margin-left: 50%;
+    margin-top: 5px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links {
+    margin-left: 50%;
+    margin-top: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #DDFFBC;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+nav .fa {
+    display: none;
+}
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 62px;
+    
+}
+.text-box hr{
+    align-items: center;
+    width: 40%;
+    background: #DDFFBC;
+    height: 1px;
+    margin-left: 30%;
+}
+#content {
+    width: 100%;
+}
+/* ---------------------about------------------- */
+#about {
+    width: 100%;
+    /* margin-top: 5%; */
+    align-items: center;
+    text-align: center;
+}
+#about h1 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 40px;
+}
+.line {
+    width: 130px;
+    height: 4px;
+    background: #FBBF26;
+    margin: 10px auto;
+    border-radius: 5px;
+    position: relative;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    
+}
+.about-col {
+    flex-basis: 45%;
+}
+.about-col h2 {
+    margin-top: 10%;
+    color: #1E5128;
+}
+.about-col p {
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20%;
+    font-size: 20px;
+}
+.about-col img {
+    width: 70%;
+    box-shadow: 10px 5px 5px #EEEEEE ;
+}
+/* -----------------------Article Tea----------------------- */
+#article {
+    width: 100%;
+    margin-top: 5%;
+    align-items: center;
+    text-align: center; 
+}
+#article h1 {
+    font-size: 40px;
+}
+#article .row {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.article-col {
+    flex-basis: 50%;
+    margin-left: 10%;
+}
+.article-col p {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+.article-col h2 {
+    text-align: left;
+    color: #1E5128;
+}
+.article-col img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ---------------galery of tea--------------- */
+#galery {
+    width: 100%;
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+}
+.galery-title {
+    width: 40%;
+}
+.galery-col {
+    width: 60%;
+}
+.img-galery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.img-galery img {
+    width: 300px;
+    margin: 10px;
+    transition: transform .3s ease;
+}
+.img-galery img:hover {
+    transform: scale(1.1);
+}
+.galery-title h1 {
+    font-size: 7vmin;
+    color: #1E5128;
+    margin-top: 10px;
+    font-style: italic;
+}
+hr {
+    align-items: center;
+    width: 80%;
+    background: #DDFFBC;
+    height: 1px;
+    margin-left: 10%;
+}
+/* ------------------profile---------- */
+#profile {
+    width: 100%;
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+}
+#profile h1 {
+    margin-top: 10%;
+}
+.profile-col {
+    flex-basis: 50%;
+}
+.data {
+    text-align: left;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+.data h4 {
+    padding: 5px;
+    color: #555;
+}
+.profile-img {
+    text-align: left;
+    position: relative;
+    flex-basis: 40%;
+    margin-bottom: 5%;
+    
+}
+.profile-images {
+    text-align: left;
+}
+.front-profile {
+    width: 200px;
+    max-width: 450px;
+    position: absolute;
+    z-index: 2;
+    transition: transform 0.5s;
+    margin-top: 10%;
+    text-align: left;
+}
+.back-profile {
+    position: relative;
+    width: 200px;
+    max-width: 450px;
+    top: -12px;
+    right: 15px;
+    margin-top: 10%;
+    text-align: right;
+}
+.front-profile:hover {
+    transform: translate(-25px, -25px);
+    cursor: pointer;
+}
+footer {
+    padding: 15px;
+    color: white;
+    background-color: #52734D;
+    text-align: center;
+    margin-top: 5%;
+    /* width: 100%; */
+    height: 30px;
+}
+footer p {
+    margin-top: 10px;
+}
+footer hr {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2px;
+}
+
+/* media query  */
+@media only screen and (max-width:700px){
+    .row {
+        flex-direction: column;
+        box-shadow: 5px 5px 12px #EEEEEE;
+    }
+    .text-box h1 {
+        font-size: 25px;
+    }
+    #header img{
+        text-align: left;
+    }
+    .about-col img {
+        margin-top: 10px;
+        box-shadow: none;
+    }
+    .about-col p {
+        font-size: 15px;
+        margin-left: 5%;
+    }
+    .article-col {
+        margin-top: 20px;
+        bottom: 10px;
+    }
+    .article-col p {
+        bottom: 20px;
+    }
+    #galery {
+        align-items: center;
+        text-align: center;
+    }
+    .img-galery img{
+        width: 100%;
+        position: relative;
+        
+    }
+    .galery-col {
+        width: 100%;
+    }
+    .galery-title  {
+        text-align: center;
+        margin-left: 30%;
+    }
+    .data  {
+        position: relative;
+        margin-left: 20%;
+    }
+    .profile-img {
+        margin-left: 30%;
+    }
+    .nav-links ul li {
+        display: block; 
+    }
+    .nav-links {
+        position: fixed;
+        background: #52734D;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+    nav .fa  {
+        display:block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        margin-left: 50%;
+        margin-top: 20px;
+        text-align: right;
+        top: 0;
+    }
+    .nav-links ul {
+        padding: 30px;
+
+    }
+    .nav-links .fa{
+        text-align: left;
+    }
+
+}
